@@ -1,0 +1,153 @@
+body {
+  background: white;
+}
+
+.itemDisplay {
+  display: grid;
+  width: 95vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .itemDisplay {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.itemCard {
+  width: 70%;
+  align-items: center;
+  margin: 10vh auto;
+}
+
+.itemCard img {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.imageDiv {
+  text-align: center;
+}
+
+.orderDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartImage {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 4rem 0.5rem 0 0;
+}
+
+.cartImage:hover {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.orderInput {
+  width: 20%;
+}
+
+.hidden {
+  display: none;
+}
+
+.shoppingCartModal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modalContent {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modalClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -3vh;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+}
+
+.modalContent img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.cartHeaders {
+  display: grid;
+  grid-template-columns: 5% 10% 55% 10% 10% 10%;
+}
+
+.cartItemDiv {
+  display: grid;
+  grid-template-columns: 5% 10% 55% 10% 10% 10%;
+  align-items: center;
+}
+
+.itemPrice {
+  text-align: center;
+}
+
+.itemQuantity {
+  text-align: center;
+}
+
+.itemTotalPrice {
+  text-align: center;
+}
+
+.deleteItemButton {
+  text-align: center;
+}
+
+.deleteItemButton:hover {
+  cursor: pointer;
+}
+
+.orderTotal {
+  text-align: right;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.continueShoppingButton,
+.checkoutButton {
+  border: none;
+  height: 10vh;
+  font-size: 1.5rem;
+  background: slategray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: white;
+}
+
+.continueShoppingButton:hover,
+.checkoutButton:hover {
+  background: lightgrey;
+}
